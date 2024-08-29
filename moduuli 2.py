@@ -41,6 +41,12 @@ luodit = luoti * 13.3
 
 Laskutulos = leiviskät + naulat + luodit
 
+kilot = Laskutulos / 1000
+kilo = int(kilot)
+
+grammat = (kilot+kilo) * 1000
+print(f"Massa nykymittojen mukaan on {kilo} kiloa ja {grammat:.2f} grammaa.")
+
 
 import random
 kolmenumeroinen_koodi = ""
@@ -55,11 +61,7 @@ nelinumeroinen_koodi += str(random.randint(1,6))
 print(f"Kolminumeroinen koodi {kolmenumeroinen_koodi}")
 print(f"Nelinumeroinen koodi {nelinumeroinen_koodi}")
 
-kilot = Laskutulos / 1000
-kilo = int(kilot)
 
-grammat = (kilot+kilo) * 1000
-print(f"Massa nykymittojen mukaan on {kilo} kiloa ja {grammat:.2f} grammaa.")
 
 
 
